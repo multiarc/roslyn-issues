@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "dotnet-test-xunit": "1.0.0-*",
+    "xunit": "2.1.0",
+    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
+    "Microsoft.CodeAnalysis.CSharp": "1.2.1",
+    "Microsoft.Extensions.DependencyModel": "1.0.0-*",
+    "Microsoft.Extensions.Configuration": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-*",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-*"
+  },
+  "testRunner": "xunit",
+  "frameworks": {
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "",
+        "System.Collections": "",
+        "System.IO": "",
+        "System.ComponentModel": "",
+        "System.Text.Encoding": ""
+      }
+    },
+    "net461": {
+      "frameworkAssemblies": {
+        "System.Runtime": "",
+        "System.Collections": "",
+        "System.IO": "",
+        "System.ComponentModel": "",
+        "System.Text.Encoding": ""
+      }
+    }
+  }
+}
