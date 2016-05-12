@@ -1,8 +1,10 @@
 {
   "version": "1.0.0-*",
+  "preserveCompilationContext": true,
   "dependencies": {
     "dotnet-test-xunit": "1.0.0-*",
     "xunit": "2.1.0",
+    "Microsoft.NETCore.Platforms": "1.0.1-*",
     "Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
     "Microsoft.CodeAnalysis.CSharp": "1.2.1",
     "Microsoft.Extensions.DependencyModel": "1.0.0-*",
