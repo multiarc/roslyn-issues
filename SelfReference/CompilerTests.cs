@@ -21,7 +21,7 @@ namespace SelfReference
         {
             private static void Main(string[] args) { }
 
-            public static object Test(dynamic value)
+            public static bool Test(dynamic value)
             {
                 return value.Count > 0;
             }
