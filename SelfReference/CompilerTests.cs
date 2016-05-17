@@ -39,8 +39,9 @@ namespace SelfReference
             {
                 using (var symbolStream = new MemoryStream())
                 {
-                    compilation.Emit(codeStream, symbolStream,
+                    var result = compilation.Emit(codeStream, symbolStream,
                         options: new EmitOptions(debugInformationFormat: DebugInformationFormat.PortablePdb));
+                    Assert.True(result.Success);
                     codeStream.Seek(0, SeekOrigin.Begin);
                     symbolStream.Seek(0, SeekOrigin.Begin);
                     Assembly.Load(codeStream.ToArray(), symbolStream.ToArray());
@@ -76,8 +77,9 @@ namespace SelfReference
             {
                 using (var symbolStream = new MemoryStream())
                 {
-                    compilation.Emit(codeStream, symbolStream,
+                    var result = compilation.Emit(codeStream, symbolStream,
                         options: new EmitOptions(debugInformationFormat: DebugInformationFormat.PortablePdb));
+                    Assert.True(result.Success);
                     codeStream.Seek(0, SeekOrigin.Begin);
                     symbolStream.Seek(0, SeekOrigin.Begin);
                     Assembly.Load(codeStream.ToArray(), symbolStream.ToArray());

@@ -49,6 +49,8 @@ namespace SelfReference
             _dependencyContext = DependencyContext.Load(applicationAssembly);
             MetadataReferences = new List<MetadataReference>();
             WalkReferenceAssemblies(applicationAssembly);
+            WalkReferenceAssemblies(typeof(System.Runtime.CompilerServices.DynamicAttribute).GetTypeInfo().Assembly);
+            WalkReferenceAssemblies(typeof(Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo).GetTypeInfo().Assembly);
             GetApplicationReferences();
         }
 

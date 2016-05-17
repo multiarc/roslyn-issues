@@ -1,16 +1,15 @@
 {
   "version": "1.0.0-*",
-  "preserveCompilationContext": true,
   "dependencies": {
-    "dotnet-test-xunit": "1.0.0-*",
-    "xunit": "2.1.0",
-    "Microsoft.NETCore.Platforms": "1.0.1-*",
-    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
+    "dotnet-test-xunit": "1.0.0-rc2-build10015",
+    "xunit": "2.1.0-rc2-build3176",
+    "Microsoft.NETCore.Platforms": "1.0.1-rc2-*",
+    "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
     "Microsoft.CodeAnalysis.CSharp": "1.2.1",
-    "Microsoft.Extensions.DependencyModel": "1.0.0-*",
-    "Microsoft.Extensions.Configuration": "1.0.0-*",
-    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-*",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0-*"
+    "Microsoft.Extensions.DependencyModel": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Configuration": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-final"
   },
   "testRunner": "xunit",
   "frameworks": {
@@ -20,7 +19,8 @@
         "System.Collections": "",
         "System.IO": "",
         "System.ComponentModel": "",
-        "System.Text.Encoding": ""
+        "System.Text.Encoding": "",
+        "Microsoft.CSharp": ""
       }
     },
     "net461": {
@@ -29,7 +29,8 @@
         "System.Collections": "",
         "System.IO": "",
         "System.ComponentModel": "",
-        "System.Text.Encoding": ""
+        "System.Text.Encoding": "",
+        "Microsoft.CSharp": ""
       }
     }
   }
